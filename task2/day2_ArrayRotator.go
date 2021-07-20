@@ -1,6 +1,6 @@
 package yurlov
 
-// циклично сдвигает срез на count элементов
+// циклично сдвигает срез на count элементов в сторону старших индексов
 func ArrayRotator(array []int, count int) []int {
 	delim := (len(array) - count%len(array)) % len(array) // индекс-разделитель делит срез на 2 части, которые меняются местами
 
